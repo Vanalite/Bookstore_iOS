@@ -10,5 +10,6 @@
 #define BookStore_BridgingHeaderImport_h
 
     #import <AFNetworking/AFNetworking.h>
+    #import <CoreData+MagicalRecord.h>
 
 #endif

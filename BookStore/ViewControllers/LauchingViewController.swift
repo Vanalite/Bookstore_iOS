@@ -17,10 +17,16 @@ class LauchingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
     @IBAction func signinButtonPressed(sender: UIButton) {
         
+    }
+    
+    @IBAction func guestLoginButtonPressed(sender: UIButton) {
+        NetworkOperation.executeRequest("GET", params: nil, path: recentBooksPath, { (success, error, json) -> Void? in
+            println(json)
+        })
     }
 }

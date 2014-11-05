@@ -7,3 +7,5 @@
 //
 
 import Foundation
+
+let recentBooksPath : NSString = "/books/recent_books/"

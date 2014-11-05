@@ -12,6 +12,11 @@
 		9787CF291A08C82E00C43F46 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF281A08C82E00C43F46 /* NetworkOperation.swift */; };
 		9787CF2D1A08DB3100C43F46 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF2C1A08DB3100C43F46 /* Constants.swift */; };
 		9787CF2F1A08DBAD00C43F46 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF2E1A08DBAD00C43F46 /* Credentials.swift */; };
+		9787CF311A09E14C00C43F46 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF301A09E14C00C43F46 /* BookListViewController.swift */; };
+		9787CF351A09E1A900C43F46 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF331A09E1A900C43F46 /* Model.xcdatamodeld */; };
+		9787CF401A09E4F600C43F46 /* BookAPIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF3F1A09E4F600C43F46 /* BookAPIExtension.swift */; };
+		9787CF421A09E51900C43F46 /* BookDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF411A09E51900C43F46 /* BookDataExtension.swift */; };
+		9787CF441A09E5DE00C43F46 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF431A09E5DE00C43F46 /* Book.swift */; };
 		978ACC841A08833B00939DC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978ACC831A08833B00939DC9 /* AppDelegate.swift */; };
 		978ACC8B1A08833B00939DC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978ACC891A08833B00939DC9 /* Main.storyboard */; };
 		978ACC8D1A08833B00939DC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978ACC8C1A08833B00939DC9 /* Images.xcassets */; };
@@ -38,6 +43,11 @@
 		9787CF2A1A08D4A800C43F46 /* BridgingHeaderImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeaderImport.h; sourceTree = "<group>"; };
 		9787CF2C1A08DB3100C43F46 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9787CF2E1A08DBAD00C43F46 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		9787CF301A09E14C00C43F46 /* BookListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
+		9787CF341A09E1A900C43F46 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		9787CF3F1A09E4F600C43F46 /* BookAPIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookAPIExtension.swift; sourceTree = "<group>"; };
+		9787CF411A09E51900C43F46 /* BookDataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDataExtension.swift; sourceTree = "<group>"; };
+		9787CF431A09E5DE00C43F46 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		978ACC7E1A08833B00939DC9 /* BookStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		978ACC821A08833B00939DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		978ACC831A08833B00939DC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				9787CF251A08BF9A00C43F46 /* LauchingViewController.swift */,
+				9787CF301A09E14C00C43F46 /* BookListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -101,6 +112,40 @@
 				9787CF2E1A08DBAD00C43F46 /* Credentials.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		9787CF321A09E19600C43F46 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				9787CF3A1A09E42D00C43F46 /* DataModels */,
+				9787CF3E1A09E45000C43F46 /* ModelSupport */,
+				9787CF331A09E1A900C43F46 /* Model.xcdatamodeld */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		9787CF361A09E2B000C43F46 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9787CF3A1A09E42D00C43F46 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				9787CF431A09E5DE00C43F46 /* Book.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		9787CF3E1A09E45000C43F46 /* ModelSupport */ = {
+			isa = PBXGroup;
+			children = (
+				9787CF3F1A09E4F600C43F46 /* BookAPIExtension.swift */,
+				9787CF411A09E51900C43F46 /* BookDataExtension.swift */,
+			);
+			path = ModelSupport;
 			sourceTree = "<group>";
 		};
 		978ACC751A08833B00939DC9 = {
@@ -126,6 +171,8 @@
 		978ACC801A08833B00939DC9 /* BookStore */ = {
 			isa = PBXGroup;
 			children = (
+				9787CF361A09E2B000C43F46 /* Utilities */,
+				9787CF321A09E19600C43F46 /* DataModels */,
 				9787CF271A08C80700C43F46 /* Helpers */,
 				9787CF221A08BEF400C43F46 /* ViewControllers */,
 				978ACC831A08833B00939DC9 /* AppDelegate.swift */,
@@ -308,9 +355,14 @@
 			files = (
 				978ACC841A08833B00939DC9 /* AppDelegate.swift in Sources */,
 				9787CF291A08C82E00C43F46 /* NetworkOperation.swift in Sources */,
+				9787CF441A09E5DE00C43F46 /* Book.swift in Sources */,
 				9787CF2F1A08DBAD00C43F46 /* Credentials.swift in Sources */,
+				9787CF401A09E4F600C43F46 /* BookAPIExtension.swift in Sources */,
+				9787CF351A09E1A900C43F46 /* Model.xcdatamodeld in Sources */,
 				9787CF261A08BF9A00C43F46 /* LauchingViewController.swift in Sources */,
 				9787CF2D1A08DB3100C43F46 /* Constants.swift in Sources */,
+				9787CF421A09E51900C43F46 /* BookDataExtension.swift in Sources */,
+				9787CF311A09E14C00C43F46 /* BookListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +576,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9787CF331A09E1A900C43F46 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9787CF341A09E1A900C43F46 /* Model.xcdatamodel */,
+			);
+			currentVersion = 9787CF341A09E1A900C43F46 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 978ACC761A08833B00939DC9 /* Project object */;
 }

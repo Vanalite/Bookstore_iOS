@@ -15,13 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-//        window = UIWindow()
-//        window?.frame = UIScreen().bounds
-//        window?.makeKeyAndVisible()
-//        let lauchingViewController: LauchingViewController = LauchingViewController()
-//        self.window!.rootViewController = lauchingViewController
-//        let navigationController: UINavigationController? = lauchingViewController.navigationController
+        
+        MagicalRecord.setupCoreDataStack()
         return true
     }
 
@@ -45,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        MagicalRecord.cleanUp()
     }
 }
 

@@ -25,8 +25,9 @@ class LauchingViewController: UIViewController {
     }
     
     @IBAction func guestLoginButtonPressed(sender: UIButton) {
-        NetworkOperation.executeRequest("GET", params: nil, path: recentBooksPath, { (success, error, json) -> Void? in
-            println(json)
+        NetworkOperation.executeRequest("GET", params: nil, path: recentBooksPath, { (success, error, json) -> Void in
+            let array: NSArray = json as NSArray
+            Book.insertOrUpdateWithJsonArray(array)
         })
     }
 }

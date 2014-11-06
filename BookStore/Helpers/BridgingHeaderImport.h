@@ -9,7 +9,11 @@
 #ifndef BookStore_BridgingHeaderImport_h
 #define BookStore_BridgingHeaderImport_h
 
-    #import <AFNetworking/AFNetworking.h>
+    #define MR_SHORTHAND
+
     #import <CoreData+MagicalRecord.h>
+    #import "ISO8601DateFormatter.h"
+
+    #import "Book.h"
 
 #endif

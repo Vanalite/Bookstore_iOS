@@ -16,7 +16,13 @@
 		9787CF351A09E1A900C43F46 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF331A09E1A900C43F46 /* Model.xcdatamodeld */; };
 		9787CF401A09E4F600C43F46 /* BookAPIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF3F1A09E4F600C43F46 /* BookAPIExtension.swift */; };
 		9787CF421A09E51900C43F46 /* BookDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF411A09E51900C43F46 /* BookDataExtension.swift */; };
-		9787CF441A09E5DE00C43F46 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF431A09E5DE00C43F46 /* Book.swift */; };
+		9787CF481A0B0C8900C43F46 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9787CF471A0B0C8900C43F46 /* libc++.dylib */; };
+		9787CF511A0B2A0E00C43F46 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF501A0B2A0E00C43F46 /* JsonParser.swift */; };
+		9787CF531A0B2A2E00C43F46 /* UtilitiyFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF521A0B2A2E00C43F46 /* UtilitiyFuncs.swift */; };
+		9787CF551A0B30B300C43F46 /* NSDateExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF541A0B30B300C43F46 /* NSDateExtenstion.swift */; };
+		9787CF5A1A0B54FF00C43F46 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF591A0B54FF00C43F46 /* Alamofire.swift */; };
+		9787CF5D1A0B572D00C43F46 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9787CF5C1A0B572D00C43F46 /* Alamofire.framework */; };
+		9787CF7F1A0B62C600C43F46 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 9787CF7E1A0B62C600C43F46 /* Book.m */; };
 		978ACC841A08833B00939DC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978ACC831A08833B00939DC9 /* AppDelegate.swift */; };
 		978ACC8B1A08833B00939DC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978ACC891A08833B00939DC9 /* Main.storyboard */; };
 		978ACC8D1A08833B00939DC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978ACC8C1A08833B00939DC9 /* Images.xcassets */; };
@@ -34,6 +40,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9787CF7C1A0B5A0000C43F46 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		17B0FBEFDD66AFB130F30EE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		186E62E4EEFEAC77F1DE9AE7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -47,7 +66,15 @@
 		9787CF341A09E1A900C43F46 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		9787CF3F1A09E4F600C43F46 /* BookAPIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookAPIExtension.swift; sourceTree = "<group>"; };
 		9787CF411A09E51900C43F46 /* BookDataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDataExtension.swift; sourceTree = "<group>"; };
-		9787CF431A09E5DE00C43F46 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		9787CF471A0B0C8900C43F46 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		9787CF501A0B2A0E00C43F46 /* JsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		9787CF521A0B2A2E00C43F46 /* UtilitiyFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilitiyFuncs.swift; sourceTree = "<group>"; };
+		9787CF541A0B30B300C43F46 /* NSDateExtenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtenstion.swift; sourceTree = "<group>"; };
+		9787CF591A0B54FF00C43F46 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		9787CF5C1A0B572D00C43F46 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		9787CF5E1A0B577C00C43F46 /* Alamofire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
+		9787CF7D1A0B62C600C43F46 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		9787CF7E1A0B62C600C43F46 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		978ACC7E1A08833B00939DC9 /* BookStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		978ACC821A08833B00939DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		978ACC831A08833B00939DC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9787CF481A0B0C8900C43F46 /* libc++.dylib in Frameworks */,
+				9787CF5D1A0B572D00C43F46 /* Alamofire.framework in Frameworks */,
 				8E4ECE81FF756D9D60D59050 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +110,8 @@
 		339D58E7BED226FBF5219A80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9787CF471A0B0C8900C43F46 /* libc++.dylib */,
+				9787CF5C1A0B572D00C43F46 /* Alamofire.framework */,
 				1F39833B1B52168A81FA817B /* libPods.a */,
 			);
 			name = Frameworks;
@@ -101,6 +132,8 @@
 				9787CF2B1A08DAF800C43F46 /* Constants */,
 				9787CF281A08C82E00C43F46 /* NetworkOperation.swift */,
 				9787CF2A1A08D4A800C43F46 /* BridgingHeaderImport.h */,
+				9787CF5E1A0B577C00C43F46 /* Alamofire.h */,
+				9787CF591A0B54FF00C43F46 /* Alamofire.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -127,6 +160,9 @@
 		9787CF361A09E2B000C43F46 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9787CF501A0B2A0E00C43F46 /* JsonParser.swift */,
+				9787CF521A0B2A2E00C43F46 /* UtilitiyFuncs.swift */,
+				9787CF541A0B30B300C43F46 /* NSDateExtenstion.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -134,7 +170,8 @@
 		9787CF3A1A09E42D00C43F46 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				9787CF431A09E5DE00C43F46 /* Book.swift */,
+				9787CF7D1A0B62C600C43F46 /* Book.h */,
+				9787CF7E1A0B62C600C43F46 /* Book.m */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -230,6 +267,7 @@
 				978ACC7B1A08833B00939DC9 /* Frameworks */,
 				978ACC7C1A08833B00939DC9 /* Resources */,
 				47C3BD9FA22752EDEC36A8EE /* Copy Pods Resources */,
+				9787CF7C1A0B5A0000C43F46 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -355,13 +393,17 @@
 			files = (
 				978ACC841A08833B00939DC9 /* AppDelegate.swift in Sources */,
 				9787CF291A08C82E00C43F46 /* NetworkOperation.swift in Sources */,
-				9787CF441A09E5DE00C43F46 /* Book.swift in Sources */,
+				9787CF531A0B2A2E00C43F46 /* UtilitiyFuncs.swift in Sources */,
 				9787CF2F1A08DBAD00C43F46 /* Credentials.swift in Sources */,
 				9787CF401A09E4F600C43F46 /* BookAPIExtension.swift in Sources */,
+				9787CF5A1A0B54FF00C43F46 /* Alamofire.swift in Sources */,
 				9787CF351A09E1A900C43F46 /* Model.xcdatamodeld in Sources */,
+				9787CF551A0B30B300C43F46 /* NSDateExtenstion.swift in Sources */,
 				9787CF261A08BF9A00C43F46 /* LauchingViewController.swift in Sources */,
+				9787CF7F1A0B62C600C43F46 /* Book.m in Sources */,
 				9787CF2D1A08DB3100C43F46 /* Constants.swift in Sources */,
 				9787CF421A09E51900C43F46 /* BookDataExtension.swift in Sources */,
+				9787CF511A0B2A0E00C43F46 /* JsonParser.swift in Sources */,
 				9787CF311A09E14C00C43F46 /* BookListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,8 +530,12 @@
 			baseConfigurationReference = 17B0FBEFDD66AFB130F30EE9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BookStore/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = BookStore/Helpers/BridgingHeaderImport.h;
@@ -502,8 +548,12 @@
 			baseConfigurationReference = 186E62E4EEFEAC77F1DE9AE7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BookStore/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = BookStore/Helpers/BridgingHeaderImport.h;

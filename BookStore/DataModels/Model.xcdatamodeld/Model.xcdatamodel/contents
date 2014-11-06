@@ -3,6 +3,7 @@
     <entity name="Book" representedClassName="Book" syncable="YES">
         <attribute name="authorName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="describeText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="publishedDate" optional="YES" attributeType="Date" syncable="YES"/>
@@ -12,6 +13,6 @@
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Book" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="Book" positionX="-63" positionY="-18" width="128" height="195"/>
     </elements>
 </model>

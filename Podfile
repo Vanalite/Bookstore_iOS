@@ -1,2 +1,2 @@
-pod 'AFNetworking', '~> 2.0'
 pod 'MagicalRecord/Shorthand', '~> 2.2'
+pod 'ISO8601DateFormatter', '~> 0.6'

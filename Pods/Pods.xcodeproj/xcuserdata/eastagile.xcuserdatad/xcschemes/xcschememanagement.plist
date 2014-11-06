@@ -4,35 +4,41 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>Pods-ISO8601DateFormatter.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-MagicalRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>091C621AB7ECEBDCE28E5E99</key>
+		<key>1562CEF26772792F92C7498C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7FF7796CF64DCE917C33C30D</key>
+		<key>212D61D0523F7A661C1AA931</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D8518039CDCA1BFA2DDFBAEC</key>
+		<key>E4881D3FE15D23A2DDDEA36F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
